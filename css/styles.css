@@ -455,10 +455,10 @@ a {
 }
 
 .modal-field {
-	margin-bottom: 16px;
+	margin-bottom: 8px;
 }
 
-.modal-lable {
+.modal-label {
 	font-size: 12px;
 	line-height: 1.17;
 	letter-spacing: 0.04em;
@@ -522,7 +522,7 @@ a {
 	margin-bottom: 24px;
 }
 
-.modal-checkbox:checked + .policy-lable > .modal-check-box {
+.modal-checkbox:checked + .policy-label > .modal-check-box {
 	background-color: #404bbf;
 	border: none;
 	fill: #f4f4fd;
@@ -544,7 +544,7 @@ a {
 	fill: transparent;
 }
 
-.policy-lable {
+.policy-label {
 	display: flex;
 	justify-content: center;
 	align-items: center;
