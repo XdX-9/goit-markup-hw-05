@@ -427,7 +427,6 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #2e2f42;
 	background-color: #e7e9fc;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0;
@@ -438,8 +437,9 @@ a {
 .close-btn:hover,
 .close-btn:focus {
 	background-color: #404bbf;
-	color: #ffffff;
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	fill: #ffffff;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	border: none;
 }
 
 .modal-title {
@@ -473,6 +473,11 @@ a {
 	outline: transparent;
 	border-radius: 4px;
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	background-color: transparent;
+}
+
+.modal-input:last-child {
+	margin-bottom: 16px;
 }
 
 .modal-input:focus {
@@ -492,6 +497,8 @@ a {
 	position: absolute;
 	left: 16px;
 	top: 50%;
+	transform: translateY(-50%);
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment-section {
@@ -500,6 +507,10 @@ a {
 	font-size: 14px;
 	resize: none;
 	padding: 8px 16px;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.04em;
+	color: rgba(46, 47, 66, 0.4);
 }
 
 .comment-section:focus {
@@ -507,7 +518,7 @@ a {
 }
 
 .modal-check-field {
-	margin: 20px 0 0 0;
+	margin-bottom: 24px;
 }
 
 .modal-checkbox:checked + .policy-lable > .modal-check-box {
@@ -526,6 +537,10 @@ a {
 	align-items: center;
 	background-color: transparent;
 	margin: 0 8px 0 0;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	fill: transparent;
 }
 
 .policy-lable {
@@ -544,14 +559,20 @@ a {
 .send-btn {
 	border-radius: 4px;
 	padding: 16px 32px;
-	width: 169px;
+	min-width: 169px;
 	height: 56px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	color: #ffffff;
+	cursor: pointer;
 	margin: 24px 0;
 	background-color: #4d5ae5;
 	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 	display: block;
 	margin: 24px auto 0 auto;
 	border: none;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-text {
