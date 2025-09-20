@@ -645,25 +645,53 @@ a {
 	margin: 0 0 0 80px;
 }
 
-.mail-label {
+.subscribe-text {
+	margin-bottom: 16px;
 	font-weight: 500;
-	color: #fff;
+	color: #ffffff;
+}
+
+.footer-form {
+	display: flex;
+	gap: 24px;
 }
 
 .footer-mail {
-	border: 1px solid #fff;
 	border-radius: 4px;
 	width: 264px;
 	height: 40px;
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	background-color: transparent;
-	border: 1px solid #fff;
+	border: 1px solid #ffffff;
 	padding-left: 16px;
-}
-
-.footer-mail::placeholder {
 	font-size: 12px;
 	line-height: 2;
 	letter-spacing: 0.04em;
-	color: #fff;
+	padding-left: 16px;
+	color: #ffffff;
+}
+
+.footer-mail::placeholder {
+	color: #ffffff;
+}
+
+.subscribe-btn {
+	min-width: 165px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	color: #ffffff;
+	cursor: pointer;
+	background-color: #4d5ae5;
+	border: none;
+	border-radius: 4px;
+}
+
+.subscribe-icon {
+	margin-left: 16px;
 }
